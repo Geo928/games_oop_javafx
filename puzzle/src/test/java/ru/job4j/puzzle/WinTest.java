@@ -11,6 +11,7 @@ public class WinTest {
     @Test
     public void whenVerticalWin() {
         int[][] board = {
+
                 {0, 0, 1, 0, 0},
                 {0, 0, 1, 0, 0},
                 {0, 0, 1, 0, 0},
