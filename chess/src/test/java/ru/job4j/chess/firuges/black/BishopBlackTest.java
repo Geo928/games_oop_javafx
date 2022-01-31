@@ -23,7 +23,6 @@ public class BishopBlackTest {
         assertThat(result.position(), is(bishop.position()));
     }
 
-
     @Test
     public void wayTest() {
         BishopBlack bishop = new BishopBlack(Cell.C1);

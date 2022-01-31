@@ -19,7 +19,7 @@ public class BishopBlack implements Figure {
     @Override
     public Cell[] way(Cell dest) {
         if (!isDiagonal(position, dest)) {
-            throw new ImpossibleMoveException(
+             throw new ImpossibleMoveException(
                     String.format("Could not move by diagonal from %s to %s", position, dest)
             );
         }
