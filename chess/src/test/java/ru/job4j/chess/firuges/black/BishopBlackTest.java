@@ -25,9 +25,16 @@ public class BishopBlackTest {
 
     @Test
     public void wayTest() {
-        BishopBlack bishop = new BishopBlack(Cell.C1);
-        Cell[] result = bishop.way(Cell.G5);
-        assertThat(result, is(new Cell[]{Cell.D2, Cell.E3, Cell.F4, Cell.G5}));
+        BishopBlack bishop = new BishopBlack(Cell.E7);
+        Cell[] result = bishop.way(Cell.B4);
+        assertThat(result, is(new Cell[]{Cell.D6, Cell.C5, Cell.B4}));
+    }
+
+    @Test
+    public void wayTestTwo() {
+        BishopBlack bishop = new BishopBlack(Cell.B7);
+        Cell[] result = bishop.way(Cell.G2);
+        assertThat(result, is(new Cell[]{Cell.C6, Cell.D5, Cell.E4, Cell.F3, Cell.G2}));
     }
 
     @Test(expected = ImpossibleMoveException.class)
